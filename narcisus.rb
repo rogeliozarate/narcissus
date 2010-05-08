@@ -4,7 +4,7 @@ require 'rubygems'
 require 'sinatra'
 
 # Define global variables
-time_start = Time(now)
+time_start = Time.now
 
 # Default route
 get '/' do
@@ -20,5 +20,7 @@ end
 
 
 
-
+get '/' do
+  "Hello world, it's #{Time.now} at the server!"
+end
 
