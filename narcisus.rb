@@ -12,6 +12,15 @@ get '/' do
 end
 
 get '/about' do
-  "I'm running on Version " + Sinatra::VERSION
+  "I'm runnnin in Sinatra Version " + Sinatra::VERSION
 end
+
+get '/agent' do
+  "<p> Your User Agent is:</>
+   <p>#{request.env['HTTP_USER_AGENT']}:</p>"
+end
+
+
+
+
 
