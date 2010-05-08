@@ -8,19 +8,10 @@ time_start = Time.now
 
 # Default route
 get '/' do
-  "Narcisus running since #{time_start} at the local server"
+  "<p>Narcisus has been running for #{Time.now-time_start}</><p>Running since #{time_start} at the local server</>"
 end
 
 get '/about' do
   "I'm running on Version " + Sinatra::VERSION
-end
-
-
-
-
-
-
-get '/' do
-  "Hello world, it's #{Time.now} at the server!"
 end
 
