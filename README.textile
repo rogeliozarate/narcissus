@@ -1,0 +1,29 @@
+h1. Narcisus
+
+By Rogelio Zárate López
+
+h2. Description 
+
+
+
+h2. Diving In
+
+* "Migrate"
+* Learn how
+* Put infor
+* Customize
+* Use the b
+
+h2. Runtime Dependencies
+
+* Ruby     1.9.2p0
+* Sinatra  1.1
+
+
+h2. Developer Dependencies
+
+* Shotgun: For Sinatra reloading.
+
+h2. License
+
+See LICENSE.
