@@ -1,12 +1,17 @@
-Narcisus
+#title Narcisus
 
-Your User Agent is: #{request.env['HTTP_USER_AGENT']}
+#info
+  %p 
+  Your IP address is: 
+  = @env['REMOTE_ADDR']
+  %p
+  Your User Agent is:
+  = @env['HTTP_USER_AGENT']
 
+#about
+  %p Running since #{Time_start} at the local server
+  %p Ruby version:
+  %p Gems:
+  %p I'm runnnin in Sinatra Version + #{Sinatra::VERSION}"
+  %p Narcisus has been running for #{Time.now-Time_start}
 
-
-About:
-Running since #{Time_start} at the local server
-Ruby version:
-Gems:
-I'm runnnin in Sinatra Version + #{Sinatra::VERSION}"
-Narcisus has been running for #{Time.now-Time_start}

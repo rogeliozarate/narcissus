@@ -2,16 +2,15 @@
 %html
   %head
     %meta(charset="utf-8")
-    %title rogeliozarate.com[home]
-    %meta(name="description" content="Rogelio Zarate Homepage")
+    %title Narcisus
+    %meta(name="description" content="Narcisus - A simple IP checker")
     %meta(name="author" content="Rogelio Zarate")
     %meta(name="copyright" content="Copyright Rogelio Zarate 2011 #{Time.now.year}. All Rights Reserved.")
-    /%link{:rel => 'stylesheet', :href => '/stylesheets/global.css', :type => 'text/css', :media => 'all'}
-    /%link{:rel => "shortcut icon", :href => "images/favicon.ico", :type => "image/x-icon"}
+    %link{:rel => 'stylesheet', :href => '/stylesheets/global.css', :type => 'text/css', :media => 'all'}
+    %link{:rel => "shortcut icon", :href => "images/favicon.ico", :type => "image/x-icon"}
     /%script{:type => "text/javascript", :src => "http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"}
 	  
   %body    
     = yield  
-    /= haml :gstats, :layout => false
-	
+    
     #footer © Copyright Rogelio Zarate #{Time.now.year}. All Rights Reserved.
