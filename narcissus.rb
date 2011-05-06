@@ -7,8 +7,7 @@ Time_start = Time.now
 
 # Default route
 get '/' do
-  @ip = @env['REMOTE_ADDR']
-    haml:index
+  haml:index
 end
 
 get '/stylesheets/global.css' do
