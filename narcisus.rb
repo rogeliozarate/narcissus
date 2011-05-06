@@ -1,7 +1,6 @@
-#!/usr/bin/env ruby 
-
-require 'rubygems'
 require 'sinatra'
+require 'haml'
+require 'sass'
 
 # Define global variables
 time_start = Time.now
