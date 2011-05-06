@@ -1,0 +1,19 @@
+#title Narcisus
+
+#info
+  %p Your IP address is: 
+  %p 
+  = @env['REMOTE_ADDR']
+  %p Your User Agent is:
+  %p 
+  = @env['HTTP_USER_AGENT']
+  %p Your body request was:
+
+
+#about
+  %p Running since #{Time_start} at the local server
+  %p Ruby version:
+  %p Gems:
+  %p I'm runnnin in Sinatra Version + #{Sinatra::VERSION}"
+  %p Narcisus has been running for #{Time.now-Time_start}
+

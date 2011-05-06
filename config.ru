@@ -1,2 +1,2 @@
-require 'narcisus'
+require 'narcissus'
 run Sinatra::Application
