@@ -3,25 +3,10 @@ require 'haml'
 require 'sass'
 
 # Define global variables
-time_start = Time.now
+Time_start = Time.now
 
 # Default route
 get '/' do
-  "<p>Narcisus has been running for #{Time.now-time_start}</><p>Running since #{time_start} at the local server</>"
+  haml:index
 end
 
-get '/about' do
-  "I'm runnnin in Sinatra Version " + Sinatra::VERSION
-end
-
-get '/agent' do
-  "<p> Your User Agent is:</>
-   <p>#{request.env['HTTP_USER_AGENT']}:</p>"
-end
-
-get '/test' do
-   "<p> Your User Agent is:</>
-    <p>#{request.env['HTTP_USER_AGENT']}:</p>
-    <p>Narcisus has been running for #{Time.now-time_start}</><p>Running since #{time_start} at the local server</>
-    I'm runnnin in Sinatra Version + #{Sinatra::VERSION}"
-end
