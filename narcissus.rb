@@ -8,6 +8,7 @@ Time_start = Time.now
 # Default route
 get '/' do
   @ip = request.env['HTTP_X_REAL_IP']|| request.env['REMOTE_ADDR']
+  @request_time = Time.now
   haml:index
 end
 
