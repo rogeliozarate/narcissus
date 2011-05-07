@@ -7,6 +7,7 @@ Time_start = Time.now
 
 # Default route
 get '/' do
+  @ip = request.env['REMOTE_ADDR'].split(',').first
   haml:index
 end
 
