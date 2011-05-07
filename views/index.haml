@@ -2,8 +2,9 @@
 
 #info
   %p Your IP address is: 
-  %p 
-  = @env['REMOTE_ADDR']
+  %p
+  = @ip 
+  /= @env['REMOTE_ADDR']
   %p Your User Agent is:
   %p 
   = @env['HTTP_USER_AGENT']
