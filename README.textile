@@ -1,28 +1,8 @@
-h1. Narcisus
+h1. Narcissus
 
-By Rogelio Zárate López
+A simple page that tells you what your IP, and something more, is.
+Try it at "http://narcissus.heroku.com": http://narcissus.heroku.com
 
-h2. Description 
-
-
-
-h2. Diving In
-
-* "Migrate"
-* Learn how
-* Put infor
-* Customize
-* Use the b
-
-h2. Runtime Dependencies
-
-* Ruby     1.9.2p0
-* Sinatra  1.1
-
-
-h2. Developer Dependencies
-
-* Shotgun: For Sinatra reloading.
 
 h2. License
 
