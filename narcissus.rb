@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'sinatra/reloader' if development?
 require 'haml'
 require 'sass'
 
@@ -11,6 +12,12 @@ get '/' do
   @request_time = Time.now
   haml:index
 end
+
+get '/api/ip' do
+  @ip = request.env['HTTP_X_REAL_IP']|| request.env['REMOTE_ADDR']
+  #{@ip}
+end
+
 
 get '/stylesheets/global.css' do
   content_type 'text/css', :charset => 'utf-8'
