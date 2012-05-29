@@ -13,7 +13,7 @@ get '/' do
   haml:index
 end
 
-get '/api/ip' do
+get '/ip' do
   @ip = request.env['HTTP_X_REAL_IP']|| request.env['REMOTE_ADDR']
   #{@ip}
 end
