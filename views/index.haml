@@ -1,11 +1,9 @@
 #title Narcissus
 #info
-  %p Your IP address is: 
   %p 
-  = @ip
-  %p Your User Agent is:
+    Your IP address is: #{@ip}
   %p 
-  = @env['HTTP_USER_AGENT']
+    Your User Agent is: #{@env['HTTP_USER_AGENT']}
 
 #about
   %p About:
@@ -13,4 +11,6 @@
   %p I reflect what you can't see.
   %p I'm running on Sinatra Version #{Sinatra::VERSION}
   %p Since #{Time_start} at the local server
+  %p 
+    %a{:href => "http://github.com/rogeliozarate/narcissus"}Meet me at GitHub
 

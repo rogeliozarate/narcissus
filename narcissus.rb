@@ -18,6 +18,10 @@ get '/ip' do
   #{@ip}
 end
 
+get '/agent' do
+  #{@env['HTTP_USER_AGENT']}
+end
+
 
 get '/stylesheets/global.css' do
   content_type 'text/css', :charset => 'utf-8'
