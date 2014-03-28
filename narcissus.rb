@@ -8,7 +8,7 @@ Time_start = Time.now
 
 # Default route
 get '/' do
-  @ip = request.env['HTTP_X_REAL_IP']|| request.env['REMOTE_ADDR']
+  @ip = request.ip #request.env['HTTP_X_REAL_IP']|| request.env['REMOTE_ADDR']
   @request_time = Time.now
   haml:index
 end
@@ -16,10 +16,6 @@ end
 get '/ip' do
   @ip = request.env['HTTP_X_REAL_IP']|| request.env['REMOTE_ADDR']
   #{@ip}
-end
-
-get '/agent' do
-  #{@env['HTTP_USER_AGENT']}
 end
 
 
